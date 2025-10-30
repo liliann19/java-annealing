@@ -30,8 +30,6 @@ public class ProblemSolvingTest {
   // TODO:
   // Come up with more tests to thoroughly test testAllStartWithA
   // Suggestions:
-  //  - test an empty set
-  //  - test a set where none start with A
   //  - test a set with only a single element
   //  - more you can think of!
 
@@ -47,6 +45,13 @@ public class ProblemSolvingTest {
     Set<String> input = Set.of("boolean", "zebra", "lilian", "ryan");
     boolean actual = ProblemSolving.allStartWithA(input);
     assertFalse(actual);
+  }
+
+  @Test
+  void testAllStartWithA_singleElement(){
+    Set<String> input = Set.of("a");
+    boolean actual = ProblemSolving.allStartWithA(input);
+    assertTrue(actual);
   }
 
   @Test

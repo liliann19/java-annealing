@@ -17,8 +17,9 @@ public class ProblemSolving {
     }
 
     for (String word : words){
-      char letter = word.charAt(0);
-      if (letter != 'a' || letter !='A'){
+      String letter = word.substring(0,1).toLowerCase();
+      System.out.println(letter);
+      if (!letter.equals("a")){
         return false;
       }
     }
