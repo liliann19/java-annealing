@@ -30,8 +30,6 @@ public class ProblemSolvingTest {
   // TODO:
   // Come up with more tests to thoroughly test testAllStartWithA
   // Suggestions:
-  //  - test a set with only a single element
-  //  - more you can think of!
 
   @Test 
   void testAllStartWithA_emptySet() {
@@ -49,7 +47,7 @@ public class ProblemSolvingTest {
 
   @Test
   void testAllStartWithA_singleElement(){
-    Set<String> input = Set.of("a");
+    Set<String> input = Set.of("apple");
     boolean actual = ProblemSolving.allStartWithA(input);
     assertTrue(actual);
   }
@@ -77,7 +75,14 @@ public class ProblemSolvingTest {
 
   // TODO:
   // Come up with more tests to thoroughly test hasEmptyString
-  // Use your creativity here!
+  // Use your creativity here! 
+  @Test
+  void testHasEmptyString_oneElementEmpty(){
+    Set<String> input = Set.of("");
+    boolean actual = ProblemSolving.hasEmptyString(input);
+    assertTrue(actual);
+  }
+
 
 
   @Test
