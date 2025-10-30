@@ -99,6 +99,13 @@ public class ProblemSolvingTest {
   // TODO:
   // Come up with more tests to thoroughly test maxLength
   // Use your creativity here!
+
+  @Test
+  void testMaxLength_multipleWords_moreWords() {
+    Set<String> input = Set.of("apple", "banana", "pear", "fig");
+    int actual = ProblemSolving.maxLength(input);
+    assertEquals(6, actual);
+  }
     
   
   // TODO:
