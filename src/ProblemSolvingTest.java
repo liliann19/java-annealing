@@ -107,6 +107,12 @@ public class ProblemSolvingTest {
     assertEquals(6, actual);
   }
     
+  @Test
+  void testMaxLength_multipleWords_oneWord() {
+    Set<String> input = Set.of("pear");
+    int actual = ProblemSolving.maxLength(input);
+    assertEquals(4, actual);
+  }
   
   // TODO:
   // Come up with ALL tests to thoroughly test minLength
