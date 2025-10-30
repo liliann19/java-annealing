@@ -120,4 +120,11 @@ public class ProblemSolvingTest {
     assertEquals(5, actual);
   }
 
+  @Test 
+  void testMinLength_multipleWords() {
+    Set<String> input = Set.of("bob", "fred", "john", "tom");
+    int actual = ProblemSolving.minLength(input);
+    assertEquals(3, actual);
+  }
+
 }
