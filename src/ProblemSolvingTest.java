@@ -113,4 +113,11 @@ public class ProblemSolvingTest {
   // Use your creativity here, and consider looking back at the maxLength
   // tests for inspiration
 
+  @Test
+  void testMinLength_oneItem(){
+    Set<String> input = Set.of("apple");
+    int actual = ProblemSolving.minLength(input);
+    assertEquals(5, actual);
+  }
+
 }

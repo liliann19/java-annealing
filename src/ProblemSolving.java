@@ -74,7 +74,7 @@ public class ProblemSolving {
     if (words.size() == 0){
       return Integer.MAX_VALUE;
     }
-    int min = 0;
+    int min = Integer.MAX_VALUE;
     for (String word : words){
       if (word.length() < min){
         min = word.length();
