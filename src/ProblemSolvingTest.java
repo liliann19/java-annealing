@@ -43,6 +43,13 @@ public class ProblemSolvingTest {
   }
 
   @Test
+  void testAllStartWithA_noA(){
+    Set<String> input = Set.of("boolean", "zebra", "lilian", "ryan");
+    boolean actual = ProblemSolving.allStartWithA(input);
+    assertFalse(actual);
+  }
+
+  @Test
   void testHasEmptyString_falseAllNonEmpty() {
     // arrange
     Set<String> input = Set.of("armadillo", "Arcanine", "utopia");
