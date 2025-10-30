@@ -127,4 +127,11 @@ public class ProblemSolvingTest {
     assertEquals(3, actual);
   }
 
+  @Test
+  void testMinLength_emptySet(){
+    Set<String> input = Set.of();
+    int actual = ProblemSolving.minLength(input);
+    assertEquals(Integer.MAX_VALUE, actual);
+  }
+
 }
